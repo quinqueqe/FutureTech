@@ -1,0 +1,233 @@
+.ebooks {
+	&-cards {}
+
+	&-card {
+		display: flex;
+		border-bottom: var(--border);
+
+		&__left {
+			padding: 155px 0;
+			padding-right: 80px;
+			border-right: var(--border);
+
+			&-downloaded {
+				margin-top: 60px;
+				display: flex;
+				gap: 50px;
+				align-items: center;
+
+				border: 1px solid var(--dark-15);
+				border-radius: 13px;
+				padding: 30px;
+				max-width: 435px;
+				// height: 130px;
+				background: var(--dark-10);
+
+				&-icons {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					background: var(--dark-08);
+					border-radius: 12px;
+					// padding: 10px;
+					width: 193px;
+					height: 70px;
+
+					img {
+						width: 50px;
+						height: 50px;
+						border: 2px solid var(--dark-40);
+						border-radius: 42px;
+					}
+				}
+			}
+
+			h3 {
+				font-family: var(--second-family);
+				font-weight: 600;
+				font-size: 40px;
+				line-height: 150%;
+				letter-spacing: -0.03em;
+				color: var(--absolute-white);
+				padding-top: 50px;
+				padding-bottom: 16px;
+			}
+
+			p {
+				font-family: var(--font-family);
+				font-weight: 400;
+				font-size: 20px;
+				line-height: 150%;
+				letter-spacing: -0.03em;
+				color: var(--grey-60);
+				padding-bottom: 50px;
+				max-width: 519px;
+			}
+
+			button {
+				font-family: var(--font-family);
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 150%;
+				letter-spacing: -0.03em;
+				color: var(--grey-60);
+
+				border: 1px solid var(--dark-15);
+				border-radius: 8px;
+				padding: 18px 24px;
+				width: 100%;
+				max-width: 519px;
+				// height: 63px;
+				background: var(--dark-10);
+				position: relative;
+
+				&::after {
+					content: '';
+					background: url('../../img/header/headerPromo.png');
+					background-repeat: no-repeat;
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 23.5px;
+					left: 370px;
+					object-fit: cover;
+				}
+			}
+
+			h6 {
+				font-family: var(--font-family);
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 150%;
+				letter-spacing: -0.03em;
+				color: var(--grey-60);
+				padding-bottom: 4px;
+			}
+
+			b {
+				font-family: var(--font-family);
+				font-weight: 600;
+				font-size: 24px;
+				line-height: 150%;
+				letter-spacing: -0.03em;
+				color: var(--absolute-white);
+			}
+		}
+
+		&__right {
+			padding: 80px 0 80px 80px;
+
+
+			&-top {
+				display: flex;
+				justify-content: space-between;
+				padding-bottom: 30px;
+			}
+
+			&-two {
+				display: flex;
+				justify-content: space-between;
+				// gap: 20px;
+				padding: 30px 0;
+			}
+
+			&-total {
+				border: 1px solid var(--dark-15);
+				border-radius: 13px;
+				padding: 30px;
+				// width: 216px;
+				// height: 121px;
+				background: var(--dark-10);
+			}
+
+			&-download {
+				
+				border: 1px solid var(--dark-15);
+				border-radius: 13px;
+				padding: 30px;
+				height: 123px;
+				width: 100%;
+				max-width: 670px;
+
+				background: var(--dark-10);
+				display: flex;
+				justify-content: space-between;
+				padding-bottom: 30px;
+			}
+
+			&-average {
+				border: 1px solid var(--dark-15);
+				border-radius: 13px;
+				padding: 30px;
+				background: var(--dark-10);
+			}
+
+			h5 {
+				font-family: var(--font-family);
+				font-weight: 600;
+				font-size: 24px;
+				line-height: 150%;
+				letter-spacing: -0.03em;
+				color: var(--absolute-white);
+			}
+
+			h4 {
+				font-family: var(--font-family);
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 150%;
+				letter-spacing: -0.03em;
+				color: var(--grey-60);
+				max-width: 655px;
+			}
+
+			h6 {
+				font-family: var(--font-family);
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 150%;
+				letter-spacing: -0.03em;
+				color: var(--grey-60);
+				padding-bottom: 4px;
+			}
+
+			p {
+				font-family: var(--font-family);
+				font-weight: 600;
+				font-size: 20px;
+				line-height: 150%;
+				letter-spacing: -0.03em;
+				color: var(--absolute-white);
+			}
+
+			button {
+				font-family: var(--font-family);
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 150%;
+				letter-spacing: -0.03em;
+				color: var(--grey-60);
+
+				border: 1px solid var(--dark-15);
+				border-radius: 10px;
+				padding: 18px 24px 18px 0px;
+				width: 147px;
+				// height: 63px;
+				background: var(--dark-08);
+				position: relative;
+
+				&::after {
+					content: '';
+					position: absolute;
+					width: 100%;
+					height: 100%;
+					top: 24px;
+					left: 103px;
+					object-fit: cover;
+					background: url('../../img/ebooks/eye.png');
+					background-repeat: no-repeat;
+				}
+			}
+		}
+	}
+}

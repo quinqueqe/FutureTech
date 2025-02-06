@@ -1,0 +1,222 @@
+// .header {
+// 	width: 100%;
+// 	position: relative;
+// 	overflow: hidden;
+// }
+
+// .header__container {}
+
+// .header__burger {
+// 	z-index: 2;
+// 	display: none;
+// 	width: 40px;
+// 	height: 40px;
+// 	position: relative;
+// 	border: none;
+// 	outline: none;
+// 	background-color: rgb(105, 94, 94);
+
+// 	span {
+// 		position: absolute;
+// 		display: block;
+// 		width: 30px;
+// 		height: 3px;
+// 		left: 5px;
+// 		background-color: black;
+// 		transition: background-color .5s, opacity .25s, transform .5s;
+// 	}
+
+// 	& span:nth-child(1) {
+// 		transform: translateY(-10px);
+// 	}
+
+// 	& span:nth-child(2) {}
+
+// 	& span:nth-child(3) {
+// 		transform: translateY(10px);
+// 	}
+// }
+
+// //крестик
+// .header.open .header__burger span:nth-child(1) {
+// 	transform: translateY(0) rotate(45deg);
+// }
+
+// .header.open .header__burger span:nth-child(2) {
+// 	opacity: 0;
+// }
+
+// .header.open .header__burger span:nth-child(3) {
+// 	transform: translateY(0) rotate(-45deg);
+// }
+
+// @media (max-width: 994px) {
+// 	.nav__btn {
+// 		display: none;
+// 	}
+// }
+
+// @media (max-width: 992px) {
+// 	.header__burger {
+// 		display: block;
+// 	}
+
+// 	.nav__list {
+// 		position: absolute;
+// 		top: 0;
+// 		right: -350px;
+// 		width: 350px;
+// 		background-color: aqua;
+// 		flex-direction: column;
+// 		// visibility: hidden;
+// 		transition: trasnform .5s, visibility .5s;
+// 	}
+
+// 	.nav__list {
+// 		display: block;
+// 	}
+
+
+
+// 	.header.open .nav__list {
+// 		transform: translateX(-100%);
+// 		visibility: visible;
+// 	}
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.header__burger {
+	display: none;
+	position: relative;
+	width: 40px;
+	height: 40px;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	z-index: 2;
+	cursor: pointer;
+}
+
+.header__burger span {
+	display: block;
+	position: absolute;
+	width: 30px;
+	height: 3px;
+	left: 5px;
+	background-color: black;
+	transition: background-color .3s, opacity .3s, transform .5s;
+	will-change: transform;
+}
+
+.header__burger:hover span {
+	background-color: rgb(103, 103, 103);
+}
+
+.header__burger span:nth-child(1) {
+	transform: translateY(-10px);
+}
+
+.header__burger span:nth-child(2) {}
+
+.header__burger span:nth-child(3) {
+	transform: translateY(10px);
+}
+
+
+/* Крестик */
+
+.header.open .header__burger span {
+	background-color: rgb(0, 0, 0);
+}
+
+.header.open .header__burger span:nth-child(1) {
+	transform: translateY(0) rotate(45deg);
+}
+
+.header.open .header__burger span:nth-child(2) {
+	opacity: 0;
+}
+
+.header.open .header__burger span:nth-child(3) {
+	transform: translateY(0) rotate(-45deg);
+}
+
+.nav__list {
+	display: flex;
+	align-items: center;
+	list-style-type: none;
+	padding: 0;
+	margin: 0;
+}
+
+.nav__item:not(:last-child) {
+	margin-right: 20px;
+}
+
+.nav__link {
+	font-size: 16px;
+}
+
+@media (max-width: 992px) {
+	.header__burger {
+		display: block;
+	}
+
+	.nav__list {
+		position: absolute;
+		right: -350px;
+		top: 0;
+		width: 350px;
+		padding: 50px 20px 20px 20px;
+		background-color: rgb(255, 255, 255);
+		box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.25);
+		visibility: hidden;
+		transition: transform .5s, visibility .5s;
+		will-change: transform;
+
+
+
+
+
+		display: flex;
+		flex-direction: column;
+		// justify-content: end;
+		// align-items: center;
+	}
+
+	.nav__list {
+		display: block;
+	}
+
+	.nav__item:not(:last-child) {
+		margin-right: 0;
+	}
+
+	.nav__link {
+		// color: white;
+		font-size: 21px;
+		display: block;
+		padding: 10px;
+	}
+
+	.header.open .nav__list {
+		transform: translateX(-100%);
+		visibility: visible;
+	}
+
+	.nav__btn {
+		display: none;
+	}
+}

@@ -1,0 +1,35 @@
+[
+	{
+		"img": "https://i.postimg.cc/FRqKvd1h/human.png",
+		"name": "John Techson",
+		"subName": "Technology",
+		"date": "October 15, 2023",
+		"text": "Tech Giants Announce New Product Line",
+		"desc": "Explore the latest innovations from tech industry leaders, unveiling new products that promise to transform the digital landscape",
+		"likes": "24.5k",
+		"messages": "50",
+		"links": "20"
+	},
+	{
+		"img": "https://i.postimg.cc/8CwXGszx/2.png",
+		"name": "Sarah Ethicist",
+		"subName": "October 11, 2023",
+		"date": "Technology",
+		"text": "The Future of Autonomous Vehicles",
+		"desc": "An in-depth analysis of the rapid advancements in autonomous vehicle technology and their impact on transportation.",
+		"likes": "32k",
+		"messages": "72",
+		"links": "18"
+	},
+	{
+		"img": "https://i.postimg.cc/sXNnB8Sc/3.png",
+		"name": "Astronomer X",
+		"subName": "December 10, 2023",
+		"date": "Technology",
+		"text": "Tech Startups Secure Record Funding",
+		"desc": "An overview of the recent surge in funding for tech startups, shaping the entrepreneurial landscape.",
+		"likes": "20k",
+		"messages": "31",
+		"links": "12"
+	}
+]

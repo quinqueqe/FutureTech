@@ -1,0 +1,38 @@
+[
+	{
+		"leftLogo": "https://i.postimg.cc/RFWc60v3/1.png",
+		"leftTitle": "Ebooks",
+		"leftDesc": "Explore our collection of ebooks covering a wide spectrum of future technology topics.",
+		"leftIcon1": "https://i.postimg.cc/SsYMQtGC/1.png",
+		"leftIcon2": "https://i.postimg.cc/HnG7r4SK/2.png",
+		"leftIcon3": "https://i.postimg.cc/tJhnWZwg/3.png",
+		"leftIcon4": "https://i.postimg.cc/G3YyZVt1/4.png",
+		"rightTitle": "Variety of Topics",
+		"rightDesc": "Topics include AI in education (25%), renewable energy (20%), healthcare (15%), space exploration (25%), and biotechnology (15%).",
+		"rightImg": "https://i.postimg.cc/L5fLD0Y2/img-Right1.png",
+		"totalTitle": "Total Ebooks",
+		"totalDesc": "Over 100 ebooks",
+		"downloadTitle": "Download Formats",
+		"downloadDesc": "PDF format for access.",
+		"averageTitle": "Average Author Expertise",
+		"averageDesc": "Ebooks are authored by renowned experts with an average of 15 years of experience"
+	},
+	{
+		"leftLogo": "https://i.postimg.cc/Y9TQ1wSd/2.png",
+		"leftTitle": "Whitepapers",
+		"leftDesc": "Dive into comprehensive reports and analyses with our collection of whitepapers. ",
+		"leftIcon1": "https://i.postimg.cc/c4SnZhtt/Image.png",
+		"leftIcon2": "https://i.postimg.cc/KvDgYTtq/Image-1.png",
+		"leftIcon3": "https://i.postimg.cc/0y5KKNf8/Image-2.png",
+		"leftIcon4": "https://i.postimg.cc/x1sJvSxL/Image-3.png",
+		"rightTitle": "Topics Coverage",
+		"rightDesc": "Whitepapers cover quantum computing (20%), AI ethics (15%), space mining prospects (20%), AI in healthcare (15%), and renewable energy strategies (30%).",
+		"rightImg": "https://i.postimg.cc/jqJHRC8m/img-Right2.png",
+		"totalTitle": "Total Whitepapers",
+		"totalDesc": "Download Formats",
+		"downloadTitle": "Over 50 whitepapers",
+		"downloadDesc": "PDF format for access.",
+		"averageTitle": "Average Author Expertise",
+		"averageDesc": "Whitepapers are authored by subject matter experts with an average of 20 years of experience."
+	}
+]

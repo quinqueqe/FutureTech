@@ -1,0 +1,106 @@
+.words {
+	&-list {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+	}
+
+	&-item {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		padding: 80px 50px 80px 50px;
+		border-left: var(--border);
+		border-right: var(--border);
+		border-bottom: var(--border);
+
+		&:nth-child(1) {
+			border-left: none;
+			border-right: none;
+		}
+
+		&:nth-child(4) {
+			border-left: none;
+			border-right: none;
+		}
+		&:nth-child(3) {
+			padding-right: 0;
+			border-left: none;
+			border-right: none;
+		}
+
+		&:nth-child(6) {
+			padding-right: 0;
+			border-left: none;
+			border-right: none;
+		}
+
+		h6 {
+			font-family: var(--font-family);
+			font-weight: 500;
+			font-size: 20px;
+			line-height: 150%;
+			color: var(--absolute-white);
+			padding-bottom: 2px;
+		}
+
+		h5 {
+			font-family: var(--font-family);
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 150%;
+			color: var(--dark-40);
+		}
+
+		p {
+			font-family: var(--font-family);
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 150%;
+			text-align: center;
+			color: var(--absolute-white);
+			max-width: 405px;
+		}
+
+		&__top {
+			display: flex;
+			gap: 12px;
+			padding-bottom: 60px;
+		}
+
+		&__appraisal {
+			display: flex;
+			gap: 7px;
+			align-items: center;
+			justify-content: center;
+
+			border: 1px solid var(--dark-15);
+			border-radius: 100px;
+			padding: 10px 16px;
+			max-width: 160px;
+			background: var(--dark-08);
+
+			position: absolute;
+			// width: 100%;
+			// height: 100%;
+			top: -20px;
+			left: 142px;
+			object-fit: cover;
+		}
+
+		&-relative {
+			position: relative;
+		}
+
+		&__content {
+
+			border: 1px solid var(--dark-15);
+			border-radius: 12px;
+			padding: 50px 30px 30px 30px;
+			// width: 465px;
+			// height: 188px;
+			background: var(--dark-10);
+		}
+	}
+}

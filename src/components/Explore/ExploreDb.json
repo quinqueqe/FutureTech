@@ -1,0 +1,35 @@
+[
+	{
+		"img": "https://i.postimg.cc/Xvn1t94w/1.png",
+		"name": "John Techson",
+		"subName": "October 15, 2023",
+		"date": "Quantum Computing",
+		"text": "The Quantum Leap in Computing",
+		"desc": "Explore the revolution in quantum computing, its applications, and its potential impact on various industries.",
+		"likes": "24.5k",
+		"messages": "50",
+		"links": "20"
+	},
+	{
+		"img": "https://i.postimg.cc/8CwXGszx/2.png",
+		"name": "Sarah Ethicist",
+		"subName": "November 5, 2023",
+		"date": "AI Ethics",
+		"text": "The Ethical Dilemmas of AI",
+		"desc": "A deep dive into ethical challenges posed by AI, including bias, privacy, and transparency.",
+		"likes": "32k",
+		"messages": "72",
+		"links": "18"
+	},
+	{
+		"img": "https://i.postimg.cc/sXNnB8Sc/3.png",
+		"name": "Astronomer X",
+		"subName": "December 10, 2023",
+		"date": "Space Exploration",
+		"text": "The Mars Colonization Challenge",
+		"desc": "Exploring the technical and logistical challenges of human colonization on Mars.",
+		"likes": "20k",
+		"messages": "31",
+		"links": "12"
+	}
+]

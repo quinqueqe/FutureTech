@@ -1,0 +1,33 @@
+html {
+    box-sizing: border-box;
+    font-size: calc(100vw / 1920 * 10);
+
+    @media (max-width: 1024px) {
+        font-size: calc(100vw / 768 * 10);
+    }
+
+    @media (max-width: 767px) {
+        font-size: calc(100vw / 500 * 10);
+    }
+
+    @media (max-width: 500px) {
+        font-size: calc(100vw / 360 * 10);
+    }
+
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    font-weight: 500;
+}
+
+.container {
+    max-width: 1630px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.none {
+    display: none;
+}

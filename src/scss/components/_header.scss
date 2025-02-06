@@ -1,0 +1,114 @@
+// @use '../helpers' as *;
+
+.header {
+	position: sticky;
+	z-index: 100;
+	top: 0;
+	animation-name: scrolling-header;
+	animation-fill-mode: both;
+	animation-timeline: scroll();
+
+	@keyframes scrolling-header {
+		to {
+			box-shadow: 0 0 1rem 0 var(--color-dark-40);
+		}
+	}
+
+	&__promo {
+		background-color: var(--dark-08);
+		border-bottom: 1px solid var(--dark-15);
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		padding: 20px 0;
+
+		button {
+			font-family: var(--font-family);
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 150%;
+			letter-spacing: -0.03em;
+			color: var(--grey-60);
+
+			&:hover {
+				color: var(--yellow-55);
+				transition: 0.3s;
+			}
+		}
+
+		span {
+			cursor: pointer;
+		}
+	}
+
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 24px 0;
+	}
+
+	&-btns {
+		display: flex;
+		gap: 40px;
+	}
+
+	&-btn {
+		font-family: var(--font-family);
+		font-weight: 500;
+		padding: 14px 24px;
+
+		font-size: 18px;
+		line-height: 150%;
+		color: var(--grey-50);
+
+		&-active {
+			font-family: var(--font-family);
+			font-size: 18px;
+			line-height: 150%;
+			color: var(--absolute-white);
+
+			border: 1px solid var(--dark-20);
+			border-radius: 10px;
+			padding: 14px 24px;
+			background: var(--dark-08);
+			cursor: auto;
+
+			&:hover {
+				color: none;
+				transition: none;
+			}
+		}
+
+		&:hover {
+			color: var(--yellow-55);
+			transition: 0.3s;
+		}
+
+		&-yellow {
+			font-family: var(--font-family);
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 150%;
+			color: var(--dark-08);
+
+			border-radius: 10px;
+			border: 1px solid var(--yellow-55);
+			padding: 14px 20px;
+			background: var(--yellow-55);
+
+			&:hover {
+				border: 1px solid var(--yellow-55);
+				color: var(--yellow-55);
+				background: var(--dark-10);
+				transition: 0.3s;
+			}
+		}
+	}
+
+	&-container {
+		background: var(--dark-10);
+	}
+}

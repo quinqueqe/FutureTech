@@ -1,0 +1,120 @@
+.part {
+	background: var(--dark-10);
+	padding-bottom: 120px;
+
+	&-header {
+		padding-top: 120px;
+		padding-bottom: 100px;
+		display: flex;
+		align-items: center;
+		gap: 80px;
+
+
+		img {
+			width: 150px;
+			height: 150px;
+		}
+
+		&__desc {
+			h6 {
+				font-family: var(--font-family);
+				font-weight: 500;
+				font-size: 20px;
+				line-height: 150%;
+				letter-spacing: -0.03em;
+				color: var(--absolute-white);
+
+				border-radius: 4px;
+				padding: 6px 10px;
+				max-width: 285px;
+				// height: 42px;
+				background: var(--dark-20);
+			}
+
+			h3 {
+				font-family: var(--second-family);
+				font-weight: 500;
+				font-size: 58px;
+				line-height: 130%;
+				letter-spacing: -0.03em;
+				color: var(--absolute-white);
+				padding-top: 16px;
+				padding-bottom: 30px;
+			}
+
+			p {
+				font-family: var(--font-family);
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 150%;
+				letter-spacing: -0.03em;
+				color: var(--grey-50);
+			}
+		}
+	}
+
+
+	&-list {
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr;
+		grid-template-rows: 1fr;
+		gap: 20px;
+		padding: 20px;
+		border: 1px solid var(--dark-15);
+		border-radius: 12px;
+		background: var(--dark-08);
+	}
+
+	&-item {
+		border: 1px solid var(--dark-15);
+		border-radius: 12px;
+		padding: 40px;
+		max-width: 505px;
+		background: var(--dark-10);
+
+		&__top {
+			display: flex;
+			justify-content: space-between;
+			padding-bottom: 20px;
+			align-items: center;
+
+			h4 {
+				font-family: var(--font-family);
+				font-weight: 600;
+				font-size: 22px;
+				line-height: 150%;
+				letter-spacing: -0.03em;
+				color: var(--absolute-white);
+				padding: 10px 0;
+			}
+		}
+
+		&__imgBlock {
+			border-radius: 100px;
+			padding: 14px;
+			width: 52px;
+			height: 52px;
+			background: var(--yellow-55);
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			cursor: pointer;
+
+			&:hover {
+				transition: 0.3s all;
+				background: var(--grey-99);
+				border: 3px solid var(--yellow-55);
+			}
+		}
+
+
+		p {
+			font-family: var(--font-family);
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 150%;
+			letter-spacing: -0.03em;
+			color: var(--grey-60);
+		}
+	}
+}

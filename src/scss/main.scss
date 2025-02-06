@@ -1,0 +1,22 @@
+// базовые подключения
+@import "vars";
+@import "base";
+@import "nullstyle";
+@import "elements";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/part";
+@import "./components/footer";
+
+// Home
+@import "./components/journey";
+@import "./components/features";
+@import "./components/explore";
+@import "./components/ebooks";
+@import "./components/words";
+
+// News
+@import "./components/visual";
+@import "./components/newsCards";
+@import "./components/global";

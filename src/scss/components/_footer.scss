@@ -1,0 +1,161 @@
+.footer {
+	&__inner {
+		&-top {
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			gap: 80px;
+			padding: 80px 0;
+			border-bottom: var(--border);
+		}
+
+		&-bot {
+			padding: 40px 0;
+			display: flex;
+			justify-content: space-between;
+			&-socials {
+				display: flex;
+				align-items: center;
+				gap: 20px;
+			}
+
+			p  {
+				font-family: var(--font-family);
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 130%;
+				letter-spacing: -0.03em;
+				color: var(--dark-40);
+				padding-right: 11px;
+				position: relative;
+				&::after {
+					content: '|';
+
+					background:var(--dark-15);
+					position: absolute;
+					// width:;
+					height: 1px;
+					top: 0;
+					left: 159px;
+					object-fit: cover;
+				}
+			}
+
+			b {
+				font-family: var(--font-family);
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 130%;
+				letter-spacing: -0.03em;
+				color: var(--dark-40);
+				padding-left: 11px;
+			}
+
+			h5 {
+				font-family: var(--font-family);
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 130%;
+				letter-spacing: -0.03em;
+				color: var(--dark-40);
+			}
+		}
+	}
+
+	&-list {
+		display: flex;
+		flex-direction: column;
+		align-items: start;
+	}
+
+	h6 {
+		font-family: var(--font-family);
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 130%;
+		letter-spacing: -0.03em;
+		color: var(--absolute-white);
+		padding-bottom: 36px;
+		cursor: pointer;
+	}
+
+	&-btn {
+		font-family: var(--font-family);
+		font-weight: 400;
+		font-size: 18px;
+		line-height: 130%;
+		letter-spacing: -0.03em;
+		color: var(--dark-40);
+
+		&:not(:last-child) {
+			padding-bottom: 18px;
+		}
+	}
+
+
+	&-resources {
+		display: flex;
+		flex-direction: column;
+		gap: 18px;
+
+		&__btn {
+			font-family: var(--font-family);
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 150%;
+			letter-spacing: -0.03em;
+			color: var(--grey-60);
+			text-align: left;
+
+			border: 1px solid var(--dark-15);
+			border-radius: 8px;
+			padding: 10px 16px;
+			// height: 47px;
+			background: var(--dark-08);
+			position: relative;
+
+
+			&::after {
+				content: '';
+				position: absolute;
+				width: 100%;
+				height: 100%;
+				top: 17px;
+				object-fit: cover;
+				background: url('../../img/footer/line.png');
+				background-repeat: no-repeat;
+			}
+
+			&-1 {
+				max-width: 165px;
+
+				&::after {
+					left: 126px;
+				}
+			}
+
+			&-2 {
+				max-width: 122px;
+
+				&::after {
+					left: 85px;
+				}
+			}
+
+			&-3 {
+				max-width: 126px;
+
+				&::after {
+					left: 87px;
+				}
+			}
+
+			&-4 {
+				max-width: 198px;
+
+				&::after {
+					left: 160px;
+				}
+			}
+		}
+	}
+}

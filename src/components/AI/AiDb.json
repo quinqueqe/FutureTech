@@ -1,0 +1,34 @@
+[
+	{
+		"leftImg": "https://i.postimg.cc/rpffM37C/1.png",
+		"leftTitle": "AI Revolution",
+		"leftMiniTitle": "Host",
+		"leftMiniDesc": "Dr. Sarah Mitchell",
+		"rightImg": "https://i.postimg.cc/B6yN1DSj/back1.png",
+		"rightTitle": "Delves into the transformative impact of AI",
+		"rightDesc": "Join Dr. Sarah Mitchell as she delves into the transformative impact of AI on industries, featuring expert interviews and real-world case studies. Explore the possibilities of AI in healthcare, finance, and more.",
+
+		"rightTitle1": "Total Episodes",
+		"rightDesc1": "50",
+		"rightTitle2": "Average Episode Length",
+		"rightDesc2": "30 min",
+		"rightTitle3": "Release Frequency",
+		"rightDesc3": "Weekly"
+	},
+	{
+		"leftImg": "https://i.postimg.cc/TwhCwQ68/2.png",
+		"leftTitle": "AI Conversations",
+		"leftMiniTitle": "Host",
+		"leftMiniDesc": "Mark Anderson",
+		"rightImg": "https://i.postimg.cc/XqCLKJqQ/back2.png",
+		"rightTitle": "Engage in thought-provoking conversations with leading experts.",
+		"rightDesc": "Mark discusses the future of AI, the impact on society, and how it's shaping industries worldwide. Engage in thought-provoking conversations with leading experts.",
+
+		"rightTitle1": "Total Episodes",
+		"rightDesc1": "40",
+		"rightTitle2": "Average Episode Length",
+		"rightDesc2": "40 min",
+		"rightTitle3": "Release Frequency",
+		"rightDesc3": "Monthly"
+	}
+]

@@ -1,0 +1,32 @@
+[
+	{
+		"cardImg": "https://i.postimg.cc/sgnCM6hK/1.png",
+		"title": "AI in Healthcare",
+		"desc": "Dr. Lisa Adams discusses how AI is revolutionizing healthcare, from diagnostic tools to patient care."
+	},
+	{
+		"cardImg": "https://i.postimg.cc/VNpyRJ4C/2.png",
+		"title": "AI Ethics",
+		"desc": "Explore the ethical dilemmas and considerations surrounding AI with guest speaker Dr. Michael Turner."
+	},
+	{
+		"cardImg": "https://i.postimg.cc/LX1c0m00/3.png",
+		"title": "Machine Learning Explained",
+		"desc": "Dive into the intricacies of machine learning with AI expert Sarah Davis. In this episode"
+	},
+	{
+		"cardImg": "https://i.postimg.cc/Y0BJ5T52/4.png",
+		"title": "AI and the Future of Work",
+		"desc": "Dr. Olivia White joins John Parker to discuss the evolving role of AI in the workplace."
+	},
+	{
+		"cardImg": "https://i.postimg.cc/MZyk7KBn/5.png",
+		"title": "AI in Education",
+		"desc": "Explore the role of AI in education as Emily Turner discusses how AI is transforming the learning experience."
+	},
+	{
+		"cardImg": "https://i.postimg.cc/28wPtc2m/6.png",
+		"title": "AI in Entertainment",
+		"desc": "David Smith as they explore the influence of AI in the entertainment industry."
+	}
+]

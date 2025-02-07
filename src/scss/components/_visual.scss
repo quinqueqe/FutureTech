@@ -7,7 +7,10 @@
 	}
 
 	&-item {
-		padding: 80px;
+		padding-top: 60px;
+		padding-bottom: 60px;
+		padding-left: 50px;
+		padding-right: 50px;
 		border-left: var(--border);
 		border-right: var(--border);
 		border-bottom: var(--border);
@@ -15,18 +18,22 @@
 		&:nth-child(1) {
 			border-left: none;
 			border-right: none;
+			padding-left: 0;
 		}
 		&:nth-child(2) {
 			border-left: var(--border);
 			border-right: none;
+			padding-right: 0;
 		}
 		&:nth-child(3) {
 			border-left: none;
 			border-right: none;
+			padding-left: 0;
 		}
 		&:nth-child(4) {
 			border-left: var(--border);
 			border-right: none;
+			padding-right: 0;
 		}
 
 		h5 {

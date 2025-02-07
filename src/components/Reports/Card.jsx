@@ -1,12 +1,10 @@
 import React from 'react'
-import imgStar from '../../img/AI/star.png'
-import BtnVideoPlay from '../../elements/BtnVideoPlay'
+// import BtnVideoPlay from '../../elements/BtnVideoPlay'
 
 export default function Card({
 	leftImg,
 	leftTitle,
-	leftMiniTitle,
-	leftMiniDesc,
+	leftDesc,
 	rightImg,
 	rightTitle,
 	rightDesc,
@@ -21,41 +19,34 @@ export default function Card({
 				<img src={leftImg} alt='img' />
 				<div className='ai-card__left-stars'>
 					<h4>{leftTitle}</h4>
-					<div className='ai-card__left-stars-block'>
-						<img src={imgStar} alt='img' />
-						<img src={imgStar} alt='img' />
-						<img src={imgStar} alt='img' />
-						<img src={imgStar} alt='img' />
-						<img src={imgStar} alt='img' />
-					</div>
 				</div>
-
-				<div className='ai-card__mini'>
-					<div>
-						<h6>{leftMiniTitle}</h6>
-						<h5>{leftMiniDesc}</h5>
-					</div>
-					<button className='ai-card__mini-btn main-hover-yellow'>Listen Podcast</button>
-				</div>
+				<b>{leftDesc}</b>
 			</div>
 			<div className='ai-card__right'>
 				<div className='ai-card__right-img'>
 					<img src={rightImg} alt='img' />
-					<BtnVideoPlay className='ai-card__right-img-btn'/>
+					{/* <BtnVideoPlay className='ai-card__right-img-btn' /> */}
 				</div>
-				<h3>{rightTitle}</h3>
-				<p>{rightDesc}</p>
+				<div className='reports-right'>
+					<div className='reports-right-desc'>
+						<h3>{rightTitle}</h3>
+						<p className='reports-right-desc-p'>{rightDesc}</p>
+					</div>
+					<button className='ai-card__mini-btn-download main-hover-yellow'>
+						Download PDF Now
+					</button>
+				</div>
 				<div className='ai-card__right-cards'>
 					<div className='ai-card__miniRight'>
-						<h6>Total Episodes</h6>
+						<h6>Publication Date</h6>
 						<h5>{rightDesc1}</h5>
 					</div>
 					<div className='ai-card__miniRight'>
-						<h6>Average Episode Length</h6>
+						<h6>Category</h6>
 						<h5>{rightDesc2}</h5>
 					</div>
 					<div className='ai-card__miniRight'>
-						<h6>Release Frequency</h6>
+						<h6>Author</h6>
 						<h5>{rightDesc3}</h5>
 					</div>
 				</div>

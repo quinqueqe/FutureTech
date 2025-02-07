@@ -1,0 +1,50 @@
+.reports {
+	&--header {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		&-btns {
+			display: flex;
+			gap: 10px;
+			border: 1px solid var(--dark-15);
+			border-radius: 10px;
+			padding: 10px;
+			// width: 495px;
+			// height: 83px;
+
+			background: var(--dark-08);
+		}
+
+		&-btn {
+			font-family: var(--font-family);
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 150%;
+			letter-spacing: -0.03em;
+			color: var(--grey-60);
+
+			border: 1px solid var(--dark-15);
+			border-radius: 8px;
+			padding: 18px 38px;
+
+			
+
+			&-active {
+				font-family: var(--font-family);
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 150%;
+				letter-spacing: -0.03em;
+
+
+				border: 1px solid var(--dark-15);
+				border-radius: 8px;
+				padding: 18px 38px;
+
+				color: var(--absolute-white);
+				background: var(--dark-15);
+			}
+		}
+	}
+}

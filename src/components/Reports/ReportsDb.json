@@ -1,0 +1,28 @@
+[
+	{
+		"leftImg": "https://i.postimg.cc/3RJbGpsh/logo1.png",
+		"leftTitle": "Quantum Computing Whitepaper",
+		"leftDesc": "Provides technical specifications and requirements for implementing quantum computing systems.",
+
+		"rightImg": "https://i.postimg.cc/pVc3DGV6/1.png",
+		"rightTitle": "Quantum Computing Whitepaper",
+		"rightDesc": "An in-depth whitepaper exploring the principles, applications, and potential impact of quantum computing.",
+
+		"rightDesc1": "July 2023",
+		"rightDesc2": "Quantum Computing",
+		"rightDesc3": "Dr. Quantum"
+	},
+	{
+		"leftImg": "https://i.postimg.cc/qqNbbrBZ/logo2.png",
+		"leftTitle": "Space Exploration Whitepaper",
+		"leftDesc": "Explores Mars colonization, asteroid resource potential, and space tourism.",
+
+		"rightImg": "https://i.postimg.cc/vH1kXrcH/2.png",
+		"rightTitle": "Space Exploration Whitepaper",
+		"rightDesc": "An in-depth whitepaper covering the latest advancements in space exploration, including Mars missions and asteroid mining.",
+
+		"rightDesc1": "September 2023",
+		"rightDesc2": "Space Exploration",
+		"rightDesc3": "FutureTech Space Division"
+	}
+]

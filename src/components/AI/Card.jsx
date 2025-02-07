@@ -1,5 +1,5 @@
 import React from 'react'
-import imgStar from '../../img/AI/star.png'
+import imgStar from '../../img/ai/star.png'
 import BtnVideoPlay from '../../elements/BtnVideoPlay'
 
 export default function Card({

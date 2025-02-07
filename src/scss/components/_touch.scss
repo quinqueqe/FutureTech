@@ -1,0 +1,185 @@
+.touch {
+	border-bottom: var(--border);
+	&-content {
+		display: flex;
+		align-items: center;
+	}
+
+	&-left {
+		padding-right: 80px;
+
+		h5 {
+			font-family: var(--second-family);
+			font-weight: 500;
+			font-size: 58px;
+			line-height: 130%;
+			letter-spacing: -0.03em;
+			color: var(--absolute-white);
+			max-width: 519px;
+			top: 50px;
+		}
+	}
+
+	&-right {
+		padding: 80px 0;
+		padding-left: 80px;
+		border-left: var(--border);
+
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		// grid-template-rows: 1fr 1fr 1FR;
+		gap: 50px;
+
+		input {
+			&:hover {
+				transition: 0.3s all;
+				border: 1px solid var(--yellow-55);
+			}
+		}
+
+		&__names {
+			display: flex;
+			flex-direction: column;
+			gap: 50px;
+		}
+
+		&__emailToNum {
+			display: flex;
+			flex-direction: column;
+			gap: 50px;
+		}
+
+		&__message {
+			grid-column: 2 span;
+
+			&-input {
+				width: 100% !important;
+				height: 100%;
+				padding-bottom: 116px !important;
+				padding-top: 30px !important;
+			}
+		}
+
+		&__bot {
+			grid-column: 2 span;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+
+			h3 {
+				font-family: var(--font-family);
+				font-weight: 400;
+				font-size: 18px;
+				line-height: 150%;
+				color: var(--absolute-white);
+
+			}
+
+			button {
+				font-family: var(--font-family);
+				font-weight: 500;
+				font-size: 18px;
+				line-height: 133%;
+				color: var(--dark-08);
+				border-radius: 8px;
+				padding: 18px 46px;
+				background: var(--yellow-55);
+				border: 1px solid var(--yellow-55);
+
+
+				&:hover {
+					transition: 0.3s all;
+
+					color: var(--yellow-55);
+					background: var(--dark-08);
+					border: 1px solid var(--yellow-55);
+				}
+			}
+
+			&-checkboxBlock {
+				display: flex;
+				cursor: pointer;
+				gap: 10px;
+
+				&:hover {
+					h3 {
+						
+						transition: 0.3s all;
+						color: var(--yellow-55);
+					}
+
+					input {
+						transition: 0.3s all;
+						border: 1px solid var(--yellow-55);
+					}
+				}
+			}
+		}
+
+		h4 {
+			font-family: var(--font-family);
+			font-weight: 500;
+			font-size: 18px;
+			line-height: 150%;
+			color: var(--absolute-white);
+			padding-bottom: 16px;
+		}
+
+
+	}
+}
+
+.touch-input {
+	font-family: var(--font-family);
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 150%;
+	color: var(--dark-40);
+
+	border: 1px solid var(--dark-15);
+	border-radius: 8px;
+	padding: 20px;
+
+	width: 433px;
+	height: 67px;
+	box-shadow: 0 0 0 4px #191919;
+	background: var(--dark-10);
+}
+
+.touch-checkbox {
+	cursor: pointer;
+	border: 1px solid var(--dark-15);
+	border-radius: 4px;
+	width: 28px;
+	height: 28px;
+	background-color: var(--dark-10);
+	appearance: none;
+	position: relative;
+
+	&::after {
+		display: none;
+	}
+
+	&-active {
+		cursor: pointer;
+		border: 1px solid var(--dark-15);
+		border-radius: 4px;
+		width: 28px;
+		height: 28px;
+		background-color: var(--dark-10);
+		appearance: none;
+		position: relative;
+
+		&::after {
+			position: absolute;
+			width: 28px;
+			height: 28px;
+			top: 4px;
+			left: 8px;
+			object-fit: cover;
+			content: "✔";
+			color: var(--absolute-white);
+			transition-duration: var(--transition-duration);
+		}
+	}
+}

@@ -1,0 +1,162 @@
+.asked {
+	&-content {
+		display: flex;
+		align-items: center;
+	}
+
+	&-left {
+		padding-right: 80px;
+
+		h4 {
+			font-family: var(--second-family);
+			font-weight: 600;
+			font-size: 40px;
+			line-height: 150%;
+			letter-spacing: -0.03em;
+			color: var(--absolute-white);
+			padding-top: 50px;
+			padding-bottom: 30px;
+		}
+
+		h3 {
+			font-family: var(--font-family);
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 150%;
+			letter-spacing: -0.03em;
+			color: var(--grey-60);
+			max-width: 519px;
+			padding-bottom: 50px;
+
+		}
+
+		button {
+			background: var(--dark-10);
+
+			&::after {
+				left: 135px;
+			}
+		}
+	}
+
+	&-cards {
+		padding: 80px 0;
+		padding-left: 80px;
+		border-left: var(--border);
+		display: flex;
+		flex-direction: column;
+		gap: 30px;
+	}
+
+	&-card {
+		border: 1px solid var(--dark-15);
+		border-radius: 12px;
+		padding: 34px;
+		// width: 100%;
+		width: 917px;
+		background: var(--dark-10);
+
+		&-titleBtn {
+			cursor: pointer;
+
+
+			&:hover {
+				transition: 0.3s all;
+
+				h5 {
+					color: var(--yellow-55);
+				}
+			}
+		}
+
+		&-title {
+			font-family: var(--font-family);
+			font-weight: 500;
+			font-size: 20px;
+			color: var(--absolute-white);
+
+			position: relative;
+
+			&::after {
+				rotate: 90deg;
+				position: absolute;
+				top: 10px;
+				translate: 0 -50%;
+				content: "";
+				right: 0;
+				width: 1rem;
+				height: 0.125rem;
+				background-color: var(--yellow-55);
+				border-radius: 1rem;
+				transition: rotate var(--transition-duration) ease-in-out;
+				/* Добавлена анимация */
+			}
+
+			&::before {
+				position: absolute;
+				top: 10px;
+				translate: 0 -50%;
+				content: "";
+				right: 0;
+				width: 1rem;
+				height: 0.125rem;
+				background-color: var(--yellow-55);
+				border-radius: 1rem;
+				/* Убираем transition отсюда, он нужен только для ::after */
+			}
+
+			&-active {
+				padding-bottom: 24px;
+				position: relative;
+
+				&::after {
+					rotate: 0deg;
+					position: absolute;
+					top: 10px;
+					translate: 0 -50%;
+					content: "";
+					right: 0;
+					width: 1rem;
+					height: 0.125rem;
+					background-color: var(--yellow-55);
+					border-radius: 1rem;
+					transition: rotate var(--transition-duration) ease-in-out;
+					/* Добавлена анимация */
+				}
+
+				&::before {
+					position: absolute;
+					top: 10px;
+					z-index: 534;
+					translate: 0 -50%;
+					content: "";
+					right: 0;
+					width: 1rem;
+					height: 0.125rem;
+					background-color: #ffff;
+					border-radius: 1rem;
+				}
+			}
+		}
+
+
+		&-desc {
+			border-top: var(--border);
+			font-family: var(--font-family);
+			font-weight: 400;
+			font-size: 18px;
+			line-height: 150%;
+			color: var(--grey-50);
+			max-width: 805px;
+			padding-top: 24px;
+			display: none;
+
+
+			&-active {
+				display: block;
+
+			}
+		}
+
+	}
+}

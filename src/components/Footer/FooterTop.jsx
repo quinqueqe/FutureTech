@@ -45,7 +45,10 @@ export default function FooterTop() {
 				<button className='footer-btn hover-desc-yellow'>AI Conversations</button>
 			</div>
 			<div className='footer-resources '>
+				<div>
 				<h6 className='footer-title hover-desc-yellow'>Resources</h6>
+				</div>
+				<div className="footer-resources-btns">
 				<button className='footer-resources__btn footer-resources__btn-1 main-hover-yellow'>
 					Whitepapers
 				</button>
@@ -58,6 +61,7 @@ export default function FooterTop() {
 				<button className='footer-resources__btn footer-resources__btn-4 main-hover-yellow'>
 					Research Papers
 				</button>
+				</div>
 			</div>
 		</div>
 	)

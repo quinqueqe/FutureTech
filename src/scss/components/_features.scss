@@ -7,6 +7,14 @@
 		&__content {
 			padding: 40px;
 
+			@media (max-width: 734px) {
+				padding: 30px;
+			}
+
+			@media (max-width: 500px) {
+				padding: 25px;
+			}
+
 			h5 {
 				font-family: var(--font-family);
 				font-weight: 500;
@@ -15,6 +23,11 @@
 				letter-spacing: -0.03em;
 				color: var(--absolute-white);
 				padding-bottom: 20px;
+
+				@media (max-width: 734px) {
+					padding-bottom: 10px;
+					font-size: 20px;
+				}
 			}
 
 			p {
@@ -25,6 +38,15 @@
 				letter-spacing: -0.03em;
 				color: var(--grey-60);
 				max-width: 364px;
+
+				@media (max-width: 734px) {
+					max-width: none;
+					font-size: 15px;
+				}
+
+				@media (max-width: 500px) {
+					font-size: 14px;
+				}
 			}
 		}
 	}
@@ -38,9 +60,21 @@
 				// justify-content: space-between;
 				align-items: center;
 
+				@media (max-width: 1024px) {
+					display: block;
+				}
+
 				&-left {
 					padding: 155px 80px 155px 0;
 					border-right: var(--border);
+
+					@media (max-width: 1024px) {
+						padding: 50px 0;
+					border-right: none;
+
+					}
+
+
 					// position: relative;
 
 					// &::after {
@@ -63,6 +97,17 @@
 						color: var(--absolute-white);
 						padding-bottom: 16px;
 						padding-top: 50px;
+
+						@media (max-width: 1024px) {
+							padding-top: 20px;
+						}
+
+						@media (max-width: 734px) {
+							font-size: 30px;
+							}
+							@media (max-width: 600px) {
+							font-size: 25px;
+							}
 					}
 
 					p {
@@ -73,6 +118,13 @@
 						letter-spacing: -0.03em;
 						color: var(--grey-60);
 						max-width: 519px;
+
+						@media (max-width: 1024px) {
+							max-width: none;
+						}
+						@media (max-width: 734px) {
+							font-size: 15px;
+						}
 					}
 				}
 
@@ -82,16 +134,33 @@
 					grid-template-rows: 1fr 1fr;
 					gap: 30px;
 					padding: 80px;
+					padding-right: 0;
+
+					@media (max-width: 1024px) {
+						padding: 30px 0;
+						border-top: var(--border);
+						border-bottom: var(--border);
+						gap: 20px;
+					}
+
+					@media (max-width: 734px) {
+						display: flex;
+						flex-direction: column;
+						gap: 15px;
+
+					}
 				}
 			}
 		}
 	}
 }
 
-.features-research-inner-left {
-
-}
+.features-research-inner-left {}
 
 .features-research-inner-right {
 	padding-top: 80px;
+
+	@media (max-width: 1024px) {
+		padding-top: 30px;
+	}
 }

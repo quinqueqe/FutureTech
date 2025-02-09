@@ -45,7 +45,7 @@ export default function EbooksCard({
 					<h5>{rightTitle}</h5>
 					<h4>{rightDesc}</h4>
 				</div>
-				<img src={rightImg} alt='img' />
+				<img className='ebooks-card__right-top-img' src={rightImg} alt='img' />
 				<div>
 					<div className='ebooks-card__right-two'>
 						<div className='ebooks-card__right-total'>

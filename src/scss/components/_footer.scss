@@ -6,6 +6,10 @@
 			gap: 80px;
 			padding: 80px 0;
 			border-bottom: var(--border);
+
+			@media (max-width: 1280px) {
+grid-template-columns: 1fr 1fr ;
+			}
 		}
 
 		&-bot {
@@ -16,6 +20,13 @@
 				display: flex;
 				align-items: center;
 				gap: 20px;
+			}
+
+			@media (max-width: 835px) {
+				flex-direction: column;
+				gap: 15px;
+				justify-content: center;
+				align-items: center;
 			}
 
 			p  {
@@ -89,6 +100,13 @@
 		&:not(:last-child) {
 			padding-bottom: 18px;
 		}
+
+		@media (max-width: 1280px) {
+font-size: 16px;
+		}
+		@media (max-width: 410px) {
+font-size: 14px;
+		}
 	}
 
 
@@ -96,6 +114,20 @@
 		display: flex;
 		flex-direction: column;
 		gap: 18px;
+
+		&-btns {
+			@media (max-width: 1280px) {
+				display: flex;
+				gap: 20px;
+				flex-wrap: wrap;
+			}
+		}
+
+		@media (max-width: 1280px) {
+grid-column: 2 span;
+gap: 0;
+// flex-direction: row;
+		}
 
 		&__btn {
 			font-family: var(--font-family);
@@ -108,7 +140,7 @@
 
 			border: 1px solid var(--dark-15);
 			border-radius: 8px;
-			padding: 10px 16px;
+			padding: 10px 36px 10px 16px;
 			// height: 47px;
 			background: var(--dark-08);
 			position: relative;
@@ -117,8 +149,8 @@
 			&::after {
 				content: '';
 				position: absolute;
-				width: 100%;
-				height: 100%;
+				width: 20px;
+				height: 20px;
 				top: 17px;
 				object-fit: cover;
 				background: url('../../img/footer/line.png');

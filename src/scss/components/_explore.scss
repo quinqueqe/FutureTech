@@ -4,7 +4,23 @@
 	&__tabs {
 		padding: 50px 0;
 		display: flex;
-		justify-content: space-between;
+		display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+		gap: 15px;
+		// justify-content: space-between;
+		// flex-wrap: nowrap;
+
+		@media (max-width: 1600px) {
+			// display: flex;
+			/* Используем flexbox для горизонтального размещения */
+			overflow-x: scroll;
+			white-space: nowrap;
+		}
+
+		@media (max-width: 1200px) {
+			padding: 35px 0;
+			// padding-bottom: 10px;
+		}
 
 		&-tab {
 			cursor: pointer;
@@ -17,10 +33,17 @@
 
 			border: 1px solid var(--dark-15);
 			border-radius: 8px;
-			padding: 30px 0;
+			padding: 30px 11px;
 			text-align: center;
 
 			width: 249px;
+
+			@media (max-width: 1550px) {
+				// font-size: 14px;
+				padding: 28px 11px;
+			}
+
+			
 
 			&:hover {
 				border: 1px solid var(--yellow-55);
@@ -28,6 +51,7 @@
 				// background: var(--dark-10);
 				transition: 0.3s;
 			}
+
 
 			&-active {
 				cursor: pointer;
@@ -60,6 +84,16 @@
 		padding-top: 80px;
 		border-bottom: var(--border);
 
+		@media (max-width: 1442px) { 
+			display: flex;
+			flex-direction: column;
+			gap: 20px;
+			justify-content: initial;
+			align-items: initial;
+			padding: 40px 0;
+			
+		}
+
 		&:nth-child(1) {
 			border-top: var(--border);
 		}
@@ -71,11 +105,17 @@
 			// align-items: start;
 			// width: 384px;
 			margin-top: -120px;
+			@media (max-width: 1442px) { 
+			margin-top: 0;
+			}
 		}
 
 		&-main {
 			width: 100%;
 			max-width: 950px;
+			@media (max-width: 1442px) {
+				max-width: 850px;
+			}
 		}
 
 		&-links {

@@ -5,6 +5,7 @@ import headerLogo from '../../img/header/headerLogo.png'
 
 export default function Header() {
 	const headerDb = ['Home', 'News', 'Podcasts', 'Resources']
+	const [openHeader, setOpenHeader] = React.useState(false)
 	const headerLinks = [
 		'/FutureTech',
 		'/FutureTech/news',
@@ -34,34 +35,51 @@ export default function Header() {
 					<img src={headerPromo} alt='img' />
 				</span>
 			</div>
-			<div className='header-container'>
-				<div className='header__inner container'>
-					<Link to='/FutureTech'>
-						<img src={headerLogo} alt='img' />
-					</Link>
-					<div className='header-btns'>
-						{headerDb.map((btn, i) => (
+			<div className='header-back'>
+				<div className='header-container container'>
+					<div className={openHeader ? 'header__inner-open' : 'header__inner'}>
+						<Link to='/FutureTech'>
+							<img src={headerLogo} alt='img' />
+						</Link>
+						<div className='header-btns'>
+							{headerDb.map((btn, i) => (
+								<Link
+									to={headerLinks[i]}
+									key={i}
+									className={
+										activeTab === i ? 'header-btn-active' : 'header-btn'
+									}
+									onClick={() => {
+										window.scrollTo(0, 0)
+										setActiveTab(i)
+										setOpenHeader(false)
+									}}
+								>
+									{btn}
+								</Link>
+							))}
+						</div>
+
+						<div>
 							<Link
-								to={headerLinks[i]}
-								key={i}
-								className={activeTab === i ? 'header-btn-active' : 'header-btn'}
+								to='/FutureTech/contact-us'
+								className='header-btn-yellow'
 								onClick={() => {
-									window.scrollTo(0, 0)
-									setActiveTab(i)
+									setActiveTab(-1)
+									setOpenHeader(false)
 								}}
 							>
-								{btn}
+								Contact Us
 							</Link>
-						))}
-					</div>
-					<div>
-						<Link
-							to='/FutureTech/contact-us'
-							className='header-btn-yellow'
-							onClick={() => setActiveTab(-1)}
-						>
-							Contact Us
-						</Link>
+							<div
+								onClick={() => setOpenHeader(!openHeader)}
+								className='header-burger'
+							>
+								<span></span>
+								<span></span>
+								<span></span>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

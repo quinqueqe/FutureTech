@@ -5,6 +5,7 @@
 
 		@media (max-width: 1441px) {
 			flex-direction: column;
+			align-items: start;
 		}
 
 		&:not(:last-child) {
@@ -40,6 +41,18 @@
 			@media (max-width: 1441px) {
 				padding-right: 0;
 				padding-top: 60px;
+				padding-bottom: 60px;
+				max-width: none;
+
+				border-bottom: var(--border);
+
+				.ai-card__left-b {
+					max-width: none;
+				}
+
+
+
+
 			}
 
 			&-adaptiv {
@@ -76,7 +89,7 @@
 				align-items: center;
 
 				@media (max-width: 1550px) {
-					flex-direction: column;
+					// flex-direction: column;
 					gap: 5px;
 					padding: 20px 0;
 				}
@@ -148,8 +161,8 @@
 				position: relative;
 
 				@media (max-width: 1550px) {
-				padding: 18px 24px 18px 24px;
-					
+					padding: 18px 24px 18px 24px;
+
 				}
 
 				&::after {
@@ -209,7 +222,12 @@
 				padding-bottom: 60px;
 				padding-top: 60px;
 				border-left: none;
+				width: 100%;
 
+				.ai-card__right-img-img {
+					
+					width: 100%;
+				}
 			}
 
 			h3 {
@@ -223,8 +241,8 @@
 				padding-bottom: 14px;
 
 				@media (max-width: 853px) {
-				font-size: 24px;
-				padding-top: 20px;
+					font-size: 24px;
+					padding-top: 20px;
 				}
 			}
 
@@ -239,8 +257,8 @@
 				padding-bottom: 50px;
 
 				@media (max-width: 853px) {
-				padding-bottom: 25px;
-				font-size: 16px;
+					padding-bottom: 25px;
+					font-size: 16px;
 				}
 
 			}

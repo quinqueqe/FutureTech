@@ -18,13 +18,13 @@ export default function Card({
 			<div className='ai-card__left'>
 				<img src={leftImg} alt='img' />
 				<div className='ai-card__left-stars'>
-					<h4>{leftTitle}</h4>
+					<h4 className='ai-card__left-stars-h4'>{leftTitle}</h4>
 				</div>
-				<b>{leftDesc}</b>
+				<b className='ai-card__left-b'>{leftDesc}</b>
 			</div>
 			<div className='ai-card__right'>
 				<div className='ai-card__right-img'>
-					<img src={rightImg} alt='img' />
+					<img className='ai-card__right-img-img' src={rightImg} alt='img' />
 					{/* <BtnVideoPlay className='ai-card__right-img-btn' /> */}
 				</div>
 				<div className='reports-right'>

@@ -2,6 +2,15 @@
 	&-cards {
 		display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr;
+
+		@media (max-width: 1200px) {
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@media (max-width: 688px) {
+
+			grid-template-columns: 1fr;
+		}
 	}
 
 	&-card {
@@ -9,18 +18,42 @@
 		border-right: var(--border);
 		border-left: var(--border);
 
+		@media (max-width: 688px) {
+			padding: 60px 0;
+			width: 100%;
+			border-right: none;
+			border-left: none;
+		}
+
 		&:nth-child(1) {
 			padding-left: 0;
 			border-left: none;
 			border-right: none;
-		}
-		&:nth-child(2) {
 
+			@media (max-width: 1200px) {
+				border-bottom: var(--border);
+			}
 		}
+
+		&:nth-child(2) {
+			@media (max-width: 1200px) {
+				border-right: none;
+				padding-right: 0;
+				border-bottom: var(--border);
+
+			}
+		}
+
 		&:nth-child(3) {
 			border-left: none;
 			border-right: none;
+
+			@media (max-width: 1200px) {
+				padding-left: 0;
+				border-bottom: var(--border);
+			}
 		}
+
 		&:nth-child(4) {
 			padding-right: 0;
 			border-right: none;

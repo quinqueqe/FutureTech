@@ -4,6 +4,75 @@
 		align-items: center;
 	}
 
+	@media (max-width: 953px) {
+		.asked-card {
+			width: 95vw;
+		}
+	}
+
+	@media (max-width: 560px) {
+		.asked-card {
+			padding: 30px;
+			h5 {
+				font-size: 18px;
+			}
+
+			p {
+				font-size: 16px;
+			}
+		}
+
+		.asked-cards {
+			gap: 15px !important;
+		}
+	}
+
+	@media (max-width: 1526px) {
+		.asked-content {
+			display: flex;
+			flex-direction: column;
+		}
+
+		.asked-left {
+			text-align: center;
+			padding: 60px 0;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			flex-direction: column;
+			border-bottom: var(--border);
+
+			button {
+				width: 100%;
+			}
+
+			h3 {
+				max-width: none;
+				padding-bottom: 30px;
+			}
+
+			h4 {
+				font-size: 58px;
+			}
+
+			.asked-left-img {
+				width: 80px;
+				height: 80px;
+			}
+
+		}
+
+		.asked-cards {
+			padding: 60px 0;
+			gap: 30px;
+			border-left: none;
+			border-bottom: none;
+		}
+	}
+
+
+
 	&-left {
 		padding-right: 80px;
 

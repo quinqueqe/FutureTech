@@ -5,6 +5,65 @@
 	&-cards {
 		display: grid;
 		grid-template-columns: repeat(4, 1fr);
+
+		@media (max-width: 740px) {
+			display: flex;
+			flex-direction: column;
+
+			.contact {
+				&-card {
+					padding: 60px 0;
+					border-right: none;
+					border-left: none;
+
+					&:nth-child(1) {
+						border-right: none !important;
+					}
+					&:nth-child(3) {
+						border-right: none !important;
+					}
+				}
+			}
+		}
+
+		@media (max-width: 1610px) {
+			grid-template-columns: 1fr 1fr;
+
+			.contact {
+				&-card {
+					border-right: none;
+					border-left: none;
+					border-bottom: var(--border);
+
+					h5 {
+						padding-bottom: 30px;
+					}
+
+					&-btns {
+						display: flex;
+						flex-direction: column;
+
+					}
+
+					&:nth-child(1) {
+						border-right: var(--border);
+					}
+
+					&:nth-child(2) {
+						padding-right: 0;
+					}
+
+					&:nth-child(3) {
+						padding-left: 0;
+						border-right: var(--border);
+					}
+
+					&:nth-child(4) {
+						padding-right: 0;
+					}
+				}
+			}
+		}
 	}
 
 	&-card {
@@ -87,6 +146,7 @@
 	&-connect__icons {
 		display: flex;
 		gap: 20px;
+
 		&-btn {
 			border: 1px solid var(--dark-15);
 			border-radius: 6px;

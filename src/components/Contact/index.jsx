@@ -7,21 +7,25 @@ export default function index() {
 				<ul className='contact-cards'>
 					<li className='contact-general contact-card'>
 						<h5>General Inquiries</h5>
-						<button className='contact-card-btn main-hover-yellow'>
-							contact@ai-podcasts.com
-						</button>
-						<button className='contact-card-btn main-hover-yellow'>
-							+1 (123) 456-7890
-						</button>
+						<div className='contact-card-btns'>
+							<button className='contact-card-btn main-hover-yellow'>
+								contact@ai-podcasts.com
+							</button>
+							<button className='contact-card-btn main-hover-yellow'>
+								+1 (123) 456-7890
+							</button>
+						</div>
 					</li>
 					<li className='contact-support contact-card'>
 						<h5>Technical Support</h5>
-						<button className='contact-card-btn main-hover-yellow'>
-							contact@ai-podcasts.com
-						</button>
-						<button className='contact-card-btn main-hover-yellow'>
-							+1 (123) 456-7890
-						</button>
+						<div className='contact-card-btns'>
+							<button className='contact-card-btn main-hover-yellow'>
+								contact@ai-podcasts.com
+							</button>
+							<button className='contact-card-btn main-hover-yellow'>
+								+1 (123) 456-7890
+							</button>
+						</div>
 					</li>
 					<li className='contact-office contact-card'>
 						<h5>Our Office</h5>
@@ -33,7 +37,10 @@ export default function index() {
 					<li className='contact-connect contact-card'>
 						<h5>Connect with Us</h5>
 						<div className='contact-connect__icons'>
-							<button className='contact-connect__icons-btn main-hover-yellow' title='Twitter'>
+							<button
+								className='contact-connect__icons-btn main-hover-yellow'
+								title='Twitter'
+							>
 								<svg
 									width='24'
 									height='24'
@@ -47,7 +54,10 @@ export default function index() {
 									></path>
 								</svg>
 							</button>
-							<button className='contact-connect__icons-btn main-hover-yellow' title='Medium'>
+							<button
+								className='contact-connect__icons-btn main-hover-yellow'
+								title='Medium'
+							>
 								<svg
 									width='24'
 									height='24'
@@ -69,7 +79,10 @@ export default function index() {
 									></path>
 								</svg>
 							</button>
-							<button className='contact-connect__icons-btn main-hover-yellow' title='Linked-in'>
+							<button
+								className='contact-connect__icons-btn main-hover-yellow'
+								title='Linked-in'
+							>
 								<svg
 									width='24'
 									height='24'

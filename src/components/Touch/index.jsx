@@ -9,7 +9,7 @@ export default function Touch() {
 			<div className='touch__inner container'>
 				<div className='touch-content'>
 					<div className='touch-left'>
-						<img src={logo} alt='img' />
+						<img className='touch-left__logo' src={logo} alt='img' />
 						<h5>Get in Touch with AI Podcasts</h5>
 					</div>
 					<form className='touch-right'>

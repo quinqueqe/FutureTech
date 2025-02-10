@@ -15,7 +15,7 @@ export default function Asked() {
 			<div className='asked__inner container'>
 				<div className='asked-content'>
 					<div className='asked-left'>
-						<img src={logo} alt='img' />
+						<img className='asked-left-img' src={logo} alt='img' />
 						<h4>Asked question</h4>
 						<h3>
 							If the question is not available on our FAQ section, Feel free to

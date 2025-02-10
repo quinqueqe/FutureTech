@@ -4,7 +4,7 @@ import BtnsPost from '../../elements/BtnsPost'
 export default function Card({ img, title, desc, likes, links }) {
 	return (
 		<li className='newsCards-card'>
-			<img src={img} alt='img' />
+			<img className='newsCards-card-img' src={img} alt='img' />
 			<h5>{title}</h5>
 			<h3>{desc}</h3>
 			<div className='newsCards-card__bot'>

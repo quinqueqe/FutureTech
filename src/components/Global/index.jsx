@@ -7,7 +7,7 @@ export default function Global() {
 	return (
 		<div className='global section'>
 			<div className='global__inner container'>
-				<img src={img} alt='img' />
+				<img className='global__inner-img' src={img} alt='img' />
 				<div className='global-content__right'>
 					<h3>Global Climate Summit Addresses Urgent Climate Action</h3>
 					<p className='desc'>

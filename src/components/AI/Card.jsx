@@ -18,15 +18,17 @@ export default function Card({
 	return (
 		<li className='ai-card'>
 			<div className='ai-card__left'>
-				<img src={leftImg} alt='img' />
-				<div className='ai-card__left-stars'>
-					<h4>{leftTitle}</h4>
-					<div className='ai-card__left-stars-block'>
-						<img src={imgStar} alt='img' />
-						<img src={imgStar} alt='img' />
-						<img src={imgStar} alt='img' />
-						<img src={imgStar} alt='img' />
-						<img src={imgStar} alt='img' />
+				<div className='ai-card__left-adaptiv'>
+					<img className='ai-card__left-img' src={leftImg} alt='img' />
+					<div className='ai-card__left-stars'>
+						<h4>{leftTitle}</h4>
+						<div className='ai-card__left-stars-block'>
+							<img src={imgStar} alt='img' />
+							<img src={imgStar} alt='img' />
+							<img src={imgStar} alt='img' />
+							<img src={imgStar} alt='img' />
+							<img src={imgStar} alt='img' />
+						</div>
 					</div>
 				</div>
 
@@ -35,13 +37,15 @@ export default function Card({
 						<h6>{leftMiniTitle}</h6>
 						<h5>{leftMiniDesc}</h5>
 					</div>
-					<button className='ai-card__mini-btn main-hover-yellow'>Listen Podcast</button>
+					<button className='ai-card__mini-btn main-hover-yellow'>
+						Listen Podcast
+					</button>
 				</div>
 			</div>
 			<div className='ai-card__right'>
 				<div className='ai-card__right-img'>
-					<img src={rightImg} alt='img' />
-					<BtnVideoPlay className='ai-card__right-img-btn'/>
+					<img  src={rightImg} alt='img' />
+					<BtnVideoPlay className='ai-card__right-img-btn' />
 				</div>
 				<h3>{rightTitle}</h3>
 				<p>{rightDesc}</p>
